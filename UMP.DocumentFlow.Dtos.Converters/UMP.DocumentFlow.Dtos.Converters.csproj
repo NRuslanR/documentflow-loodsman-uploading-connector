@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Loodsman.Tasks.Dtos\Loodsman.Tasks.Dtos\UMP.Loodsman.Dtos.csproj" />
+    <ProjectReference Include="..\..\UMP.DocumentFlow.Dtos\UMP.DocumentFlow.Dtos\UMP.DocumentFlow.Dtos.csproj" />
+  </ItemGroup>
+
+</Project>

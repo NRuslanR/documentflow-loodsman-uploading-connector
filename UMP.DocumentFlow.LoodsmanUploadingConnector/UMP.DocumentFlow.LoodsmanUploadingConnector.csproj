@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.5.0" />
+    <PackageReference Include="Npgsql" Version="6.0.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.18" />
+    <PackageReference Include="Serilog" Version="3.0.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="System.Threading.Tasks.Dataflow" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DbTableDataChangesSubscriberInterfaces\DbTableDataChangesSubscriberInterfaces\DbTableDataChangesSubscriberInterfaces.csproj" />
+    <ProjectReference Include="..\..\Loodsman.Tasks.Dtos\Loodsman.Tasks.Dtos\UMP.Loodsman.Dtos.csproj" />
+    <ProjectReference Include="..\..\MessagingService\MessagingService\MessagingService.csproj" />
+    <ProjectReference Include="..\..\PostgresTableDataChangesSubscriber\PostgresTableDataChangesSubscriber\PostgresTableDataChangesSubscriber.csproj" />
+    <ProjectReference Include="..\..\RabbitMQMessagingService\RabbitMQMessagingService\SimpleRabbitMQMessagingService.csproj" />
+    <ProjectReference Include="..\..\UMP.DocumentFlow.Dtos.Mappers\UMP.DocumentFlow.Dtos.Mappers\UMP.DocumentFlow.Dtos.Mappers.csproj" />
+    <ProjectReference Include="..\..\UMP.DocumentFlow.Dtos\UMP.DocumentFlow.Dtos\UMP.DocumentFlow.Dtos.csproj" />
+    <ProjectReference Include="..\UMP.DocumentFlow.Dtos.Converters\UMP.DocumentFlow.Dtos.Converters.csproj" />
+  </ItemGroup>
+
+</Project>
